@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ==== QDialog Background ==== */
+QDialog#AddPatientDialog {
+    background-color: #F5F5F5;
+    font-family: Segoe UI, sans-serif;
+    font-size: 13px;
+    color: #212121;
+}
+
+/* ==== QLabel ==== */
+QLabel {
+    color: #212121;
+    font-weight: 500;
+}
+
+/* ==== QLineEdit, QPlainTextEdit ==== */
+QLineEdit, QPlainTextEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    padding: 6px;
+    color: #212121;
+}
+QLineEdit:focus, QPlainTextEdit:focus {
+    border: 1px solid #009688;
+    background-color: #F0FDFC;
+}
+
+/* ==== QDateEdit ==== */
+QDateEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: #212121;
+}
+QDateEdit:focus {
+    border: 1px solid #009688;
+}
+
+/* ==== QComboBox ==== */
+QComboBox {
+    background-color: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 5px;
+    padding: 4px 6px;
+    color: #212121;
+}
+QComboBox:focus {
+    border: 1px solid #009688;
+}
+
+/* ==== QPushButton - Submit ==== */
+QPushButton#btnSubmit {
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+QPushButton#btnSubmit:hover {
+    background-color: #00796B;
+}
+
+/* ==== QPushButton - Cancel ==== */
+QPushButton#btnCancel {
+    background-color: #CFD8DC;
+    color: #212121;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+QPushButton#btnCancel:hover {
+    background-color: #B0BEC5;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="5,1">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>First Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Last Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditFirstname"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEditLastname"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEditID"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>National ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Date of Birth</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Gender</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDateEdit" name="dateEditBirth">
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="comboGender">
+        <item>
+         <property name="text">
+          <string>Male</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Female</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Other</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Phone Number</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Address</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEditPhone"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPlainTextEdit" name="plainTextAddress"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnSubmit">
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancel">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>973</width>
+    <height>761</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HMS</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,4">
+       <item>
+        <widget class="QFrame" name="sidebarFrame">
+         <property name="styleSheet">
+          <string notr="true">QFrame#sidebarFrame {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #0e3f3e, stop:1 #195b57
+    );
+}
+
+QPushButton {
+    color: #cfd8dc;
+    background-color: transparent;
+    border: none;
+    padding: 10px 16px;
+  font-size: 15px;
+font-weight: 500;
+font-family: &quot;Arial&quot;, sans-serif;
+    border-radius: 6px;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+QPushButton:checked {
+    background-color: #14c38e;
+    color: white;
+    font-weight: bold;
+}
+
+#btnLogout {
+    color: #ff5c5c;
+    font-weight: bold;
+}
+
+#btnLogout:hover {
+    background-color: rgba(255, 92, 92, 0.2);
+    color: #ffffff;
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>-3</number>
+         </property>
+         <property name="midLineWidth">
+          <number>0</number>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="btnDashboard">
+            <property name="text">
+             <string>🏠  Dashboard</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnPatients">
+            <property name="text">
+             <string>🧍  Patients</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAppointments">
+            <property name="text">
+             <string>📅  Appointments</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnVisitReports">
+            <property name="text">
+             <string>📋  Visit Reports</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnPrescriptions">
+            <property name="text">
+             <string>💊  Prescriptions</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnPayments">
+            <property name="text">
+             <string>💳  Payments</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEmployees">
+            <property name="text">
+             <string>👥  Employees</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnReports">
+            <property name="text">
+             <string>📊  Reports</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSettings">
+            <property name="text">
+             <string>⚙️  Settings</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLogout">
+            <property name="text">
+             <string>🔒  Logout</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="page_1"/>
+         <widget class="QWidget" name="page_5">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="styleSheet">
+              <string notr="true">/* ==== پس‌زمینه کلی ویجت ==== */
+QWidget#widget_2 {
+    background-color: #ECEFF1;
+}
+
+/* ==== QLineEdit - جستجو ==== */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #B0BEC5;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #212121;
+}
+QLineEdit:focus {
+    border: 1px solid #009688;
+    background-color: #F1F8F7;
+}
+
+/* ==== QPushButton - دکمه‌های مهم ==== */
+
+/* AddPatient - رنگ رسمی و با تاکید */
+#btnAddPatient {
+    background-color: #009688;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: bold;
+}
+#btnAddPatient:hover {
+    background-color: #00796B;
+}
+
+/* Search - خنثی و ساده */
+#btnSearch {
+    background-color: #CFD8DC;
+    color: #212121;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+#btnSearch:hover {
+    background-color: #B0BEC5;
+}
+
+/* Reserve - اصلی‌ترین عملیات */
+#btnReserve {
+    background-color: #009688;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+#btnReserve:hover {
+    background-color: #00796B;
+}
+
+/* Edit - عملیات هشدار/تغییر */
+#btnEdit {
+    background-color: #E0F7F4;
+    color: #00C49A;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #B2EDE7;
+}
+#btnEdit:hover {
+    background-color: #C7F1EB;
+}
+
+/* View - خنثی */
+#btnView {
+    background-color: #CFD8DC;
+    color: #212121;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+#btnView:hover {
+    background-color: #B0BEC5;
+}
+/* ==== QTableView ==== */
+QTableWidget#tablePatients {
+    background-color: white;
+    alternate-background-color: #f0f0f0;
+    gridline-color: #cccccc;
+    font-size: 10pt;
+    border: 1px solid #bdbdbd;
+}
+
+QHeaderView::section {
+    background-color: #00897B;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    border: 1px solid #bdbdbd;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    selection-background-color: #80cbc4;
+    selection-color: black;
+}
+
+
+QHeaderView::section {
+    background-color: #ECEFF1;
+    color: #37474F;
+    padding: 6px;
+    border: 1px solid #CFD8DC;
+    font-weight: bold;
+}
+</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="1" column="0">
+               <widget class="QWidget" name="widget_4" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QPushButton" name="btnReserve">
+                   <property name="text">
+                    <string>Reserve</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnEdit">
+                   <property name="text">
+                    <string>Edit</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnView">
+                   <property name="text">
+                    <string>View</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QWidget" name="widget_3" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditSearch">
+                   <property name="font">
+                    <font>
+                     <pointsize>-1</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnSearch">
+                   <property name="text">
+                    <string>Search</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnAddPatient">
+                   <property name="text">
+                    <string>AddPatient</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QTableWidget" name="tablePatients"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_6"/>
+         <widget class="QWidget" name="page_7"/>
+         <widget class="QWidget" name="page_8"/>
+         <widget class="QWidget" name="page_9"/>
+         <widget class="QWidget" name="page_10"/>
+         <widget class="QWidget" name="page_11"/>
+         <widget class="QWidget" name="page_12"/>
+         <widget class="QWidget" name="page_13"/>
+         <widget class="QWidget" name="page_14"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>973</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+Python packages (requirements.txt):
+
+PyQt5>=5.15
+pyodbc>=4.0
+
+
+System requirements:
+
+Windows / Linux with Python 3.8+
+
+SQL Server (2019 or newer recommended)
+
+ODBC Driver 17 for SQL Server (required for pyodbc connection)
+
+A database named HMS_DB (can be created by running database/HMS_DB.sql)
