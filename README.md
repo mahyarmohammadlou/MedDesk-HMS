@@ -51,7 +51,7 @@ Acknowledgments
 
 Clone the repo & create a virtual environment (optional but recommended):
 
-git clone https://github.com/mahyarmohammdlou/HMS.git
+git clone https://github.com/mahyarmohammdlou/MedDesk-HMS.git
 cd HMS
 python -m venv venv
 # Windows:
