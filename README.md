@@ -94,34 +94,35 @@ Use Reserve to create a demo appointment for the selected patient.
 
 <table>
   <tr>
-    <td align="center">
+    <td align="center" width="33%">
       <strong>ERD Diagram</strong><br>
-      <img src="asset/HMS_DB_View.png" width="90%">
+      <img src="asset/HMS_DB_View.png" height="200">
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <strong>Login Dialog</strong><br>
-      <img src="asset/login.png" width="90%">
+      <img src="asset/login.png" height="200">
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <strong>Main Window</strong><br>
-      <img src="asset/overview.png" width="90%">
+      <img src="asset/overview.png" height="200">
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Add Patient Form</strong><br>
-      <img src="asset/add.png" width="90%">
+      <img src="asset/add.png" height="200">
     </td>
     <td align="center">
       <strong>Show Patient</strong><br>
-      <img src="asset/show.png" width="90%">
+      <img src="asset/show.png" height="200">
     </td>
     <td align="center">
       <strong>SQL Patient List</strong><br>
-      <img src="asset/sql_query.png" width="90%">
+      <img src="asset/sql_query.png" height="200">
     </td>
   </tr>
 </table>
+
 
 ---
 
