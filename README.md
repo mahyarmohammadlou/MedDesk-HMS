@@ -94,34 +94,42 @@ Use Reserve to create a demo appointment for the selected patient.
 
 <table>
   <tr>
-    <td align="center" width="33%">
+    <td align="center" width="33%" style="padding: 15px;">
       <strong>ERD Diagram</strong><br>
-      <img src="asset/HMS_DB_View.png" height="200">
+      <img src="asset/HMS_DB_View.png" height="250"
+           style="border:1px solid #444; border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.4);">
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="33%" style="padding: 15px;">
       <strong>Login Dialog</strong><br>
-      <img src="asset/login.png" height="200">
+      <img src="asset/login.png" height="250"
+           style="border:1px solid #444; border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.4);">
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="33%" style="padding: 15px;">
       <strong>Main Window</strong><br>
-      <img src="asset/overview.png" height="200">
+      <img src="asset/overview.png" height="250"
+           style="border:1px solid #444; border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.4);">
     </td>
   </tr>
+
   <tr>
-    <td align="center">
+    <td align="center" width="33%" style="padding: 15px;">
       <strong>Add Patient Form</strong><br>
-      <img src="asset/add.png" height="200">
+      <img src="asset/add.png" height="250"
+           style="border:1px solid #444; border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.4);">
     </td>
-    <td align="center">
+    <td align="center" width="33%" style="padding: 15px;">
       <strong>Show Patient</strong><br>
-      <img src="asset/show.png" height="200">
+      <img src="asset/show.png" height="250"
+           style="border:1px solid #444; border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.4);">
     </td>
-    <td align="center">
+    <td align="center" width="33%" style="padding: 15px;">
       <strong>SQL Patient List</strong><br>
-      <img src="asset/sql_query.png" height="200">
+      <img src="asset/sql_query.png" height="250"
+           style="border:1px solid #444; border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.4);">
     </td>
   </tr>
 </table>
+
 
 
 ---
