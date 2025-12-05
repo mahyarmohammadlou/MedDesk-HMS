@@ -90,31 +90,38 @@ Use Reserve to create a demo appointment for the selected patient.
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-ERD diagram:
-
-![Dashboard Overview](asset/HMS_DB_View.png)
-
-Login dialog:
-
-![Dashboard Overview](asset/login.png)
-
-Main Windows:
-
-![Dashboard Overview](asset/overview.png)
-
-Add patient:
-
-![Dashboard Overview](asset/add.png)
-
-Show patient:
-
-![Dashboard Overview](asset/show.png)
-
-Show patient list in SQL:
-
-![Dashboard Overview](asset/sql_query.png)
+<table>
+  <tr>
+    <td align="center">
+      <strong>ERD Diagram</strong><br>
+      <img src="asset/HMS_DB_View.png" width="95%" style="border-radius:10px;">
+    </td>
+    <td align="center">
+      <strong>Login Dialog</strong><br>
+      <img src="asset/login.png" width="95%" style="border-radius:10px;">
+    </td>
+    <td align="center">
+      <strong>Main Window</strong><br>
+      <img src="asset/overview.png" width="95%" style="border-radius:10px;">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Add Patient Form</strong><br>
+      <img src="asset/add.png" width="95%" style="border-radius:10px;">
+    </td>
+    <td align="center">
+      <strong>Show Patient</strong><br>
+      <img src="asset/show.png" width="95%" style="border-radius:10px;">
+    </td>
+    <td align="center">
+      <strong>SQL Patient List</strong><br>
+      <img src="asset/sql_query.png" width="95%" style="border-radius:10px;">
+    </td>
+  </tr>
+</table>
 
 ---
 
