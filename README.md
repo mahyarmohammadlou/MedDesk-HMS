@@ -1,35 +1,13 @@
-## Hospital Management System (HMS)
+## Hospital Management System (HMS) — PyQt5 + SQL Server
 
-A work-in-progress desktop application for managing hospital operations, built with Python (PyQt5) and SQL Server.
-Current version focuses on patient management with basic appointment demo; more clinical modules are planned.
+A desktop HMS prototype focused on **patient management** and a **demo appointment flow**.
+Built to showcase **GUI CRUD**, **normalized database design**, and **transaction-safe inserts**.
 
-Table of Contents
-
----
-
-## Features
-
-Installation
-
-Usage
-
-Screenshots
-
-Dependencies
-
-Project Structure
-
-Configuration
-
-Roadmap
-
-Known Limitations
-
-Contributing
-
-License
-
-Acknowledgments
+## What this project demonstrates
+- PyQt5 desktop UI (Qt Designer `.ui` loaded at runtime)
+- SQL Server schema (normalized entities + ERD)
+- Transactional insert: `parties → persons → patients` committed atomically
+- Basic patient table: view, search, add, edit
 
 ---
 
@@ -50,10 +28,11 @@ Acknowledgments
 ## Installation
 
 Clone the repo & create a virtual environment (optional but recommended):
-
+```bash
 git clone https://github.com/mahyarmohammdlou/MedDesk-HMS.git
-cd HMS
+cd MedDesk-HMS
 python -m venv venv
+```
 # Windows:
 venv\Scripts\activate
 # macOS/Linux:
@@ -62,7 +41,7 @@ source venv/bin/activate
 
 Install dependencies:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 Create database & schema:
@@ -79,10 +58,14 @@ Execute database/HMS_DB.sql to create tables and seed required objects.
 
 Run the desktop app:
 
-python app/HMS.py
+`python app/HMS.py`
 
 
-Log in using the test account (admin / admin123). The login dialog loads from login.ui and seeds the test user automatically if needed.
+```md
+🔑 User Authentication (demo): simple login dialog with a seeded admin account
+(admin / admin123) auto-created when the users table is empty.
+⚠️ Demo-grade only (plain-text password check for development/testing).
+```
 
 Go to Patients to view, search, add, edit, or double-click to open a quick view.
 
@@ -184,20 +167,26 @@ CONN_STR = (
 
 
 ---
+## Planned Modules (Roadmap)
 
-## Roadmap
+The following modules are **planned and partially modeled at the database level (ERD)** and will be implemented iteratively:
 
-📝 Medical Records (visit notes, diagnosis, plan)
+🧪 Laboratory Management  
+- Test orders, results, and reference ranges
 
-🧪 Lab Tests (orders, results)
+💊 Medications & Prescriptions  
+- Drug catalog, prescribing, and medication history
 
-💊 Medications & Prescriptions
+💰 Billing & Financial Operations  
+- Invoices, payments, and basic accounting flows
 
-🏨 Rooms & Billing/Invoices
+📝 Clinical Records  
+- Visit notes, diagnoses, and care plans
 
-📊 Reporting & Audit Logs
+📊 Reporting & Audit Logs  
+- Operational reports and traceability
 
-These entities already exist in the ERD and will be implemented iteratively.
+> Note: Core entities for these modules already exist in the database schema and ERD.
 
 ---
 
